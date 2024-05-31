@@ -20,6 +20,7 @@ The following is just some of the wide range of topics I hope to discuss and cov
 - [ ] Gaming and cinema related
 
 ## Socials
+
 * 🤝 You can connect with me on [LinkedIn][1] and [GitHub][2]
 
 [1]: https://www.linkedin.com/in/pedro-torres99
