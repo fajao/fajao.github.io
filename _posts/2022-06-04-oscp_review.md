@@ -24,6 +24,12 @@ The Offensive Security Certified Professional (OSCP) certification is one of the
     border-collapse: collapse;
     padding: 8px;
   }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 </style>
 
 | Machine | Points | Description |
@@ -31,7 +37,6 @@ The Offensive Security Certified Professional (OSCP) certification is one of the
 | Stand-Alone | 20 | 20 pts from each stand-alone (10 pts for low privilege user + 10 pts for root) |
 | AD Lab (1 DC + 2 hosts) | 40 | You need to compromisse the whole AD set. If you don’t get domain admin you won’t receive any points |
 | | 10 | You receive 10 bonus points after completing at least 80% of the labs exercises in each module and submit 30 proof.txt from the challenge labs |
-
 
 &nbsp;  
 
@@ -51,8 +56,6 @@ The challenge labs are composed of 6 environments: 3 networks (Medtech, Relia an
 
 After getting my bonus points, I went for the [TJ Null’s list][2] and completed around 44 machines from PG Practice. Overall it was a good practice, even though some of the machines were broken.
 
-&nbsp;  
-
 ![OSCP bonus points](/assets/img/certifications/oscp_bonus.png)
 
 &nbsp;  
@@ -65,11 +68,7 @@ After dismounting my second monitor, I started the exam and my first step was to
 
 In the first hour, I already had a foothold on the AD set but couldn’t escalate privileges. After 6 hours of reviewing all screenshots and enumerating the AD set again, I went for the stand-alones and was able to get a low privilege user, but again, I was unable to escalate to root. After some time, I decided that I needed some rest, so I went to ~~try to~~ sleep for the next 4 hours.  
 
-&nbsp;  
-
 ![TheOffice MS kill myself](/assets/gifs/I_m_going_to_kill_myself_The_Office.gif)
-
-&nbsp;  
 
 After some terrible sleep, I started enumerating the first AD machine again and was able to finally escalate privileges and pivot to the other host. From there, it took me less than an hour to fully compromise the AD set.
 
@@ -93,7 +92,7 @@ Even though I already had enough points to pass, I tried to root the final stand
 
 It was a long road and one I thoroughly enjoyed. I’m very proud of my exam results and that I passed on the first attempt. I am now determined to complete CRTO from Zero-Point Security, let’s see how it goes!
 
-&nbsp;  
+
 
 ![TheOffice MS and Dwight dancing](/assets/gifs/the-office-michael-scott.gif)
 
