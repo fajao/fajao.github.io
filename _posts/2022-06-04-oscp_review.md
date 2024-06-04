@@ -10,29 +10,36 @@ tags: [oscp,exam,tips]
 
 A couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal OSCP journey and some tips you can use to help yourself pass the exam as well.
 
-</br>
-
 ![OSCP certificate](/assets/img/certifications/oscp_cert.png)
+
+&nbsp;  
 
 ## OSCP Exam
 
 The Offensive Security Certified Professional (OSCP) certification is one of the most respected and sought-after credentials in the cybersecurity field. The OSCP exam gives you 23 hours and 45 minutes to hack into 6 target machines (3 stand-alone machines and 1 Active Directory environment that contains 2 hosts and 1 domain controller). Each machine compromised grants you an amount of points, and you need at least 70 points to pass.
 
-</br>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+</style>
 
 | Machine | Points | Description |
-| :------ | :---: | :---: |
+| :------: | :---: | :--- |
 | Stand-Alone | 20 | 20 pts from each stand-alone (10 pts for low privilege user + 10 pts for root) |
 | AD Lab (1 DC + 2 hosts) | 40 | You need to compromisse the whole AD set. If you don’t get domain admin you won’t receive any points |
 | | 10 | You receive 10 bonus points after completing at least 80% of the labs exercises in each module and submit 30 proof.txt from the challenge labs |
 
-</br>
+
+&nbsp;  
 
 ## Background
 
 Before diving into the PEN-200 equipment, I finished the [PEH course from TCM Security][1] and had some exposure to CTFs from TryHackme and HackTheBox machines. Other than that, I had previously taken the [Mike Meyers][4] Network+ and Security+ courses.
 
-</br>
+&nbsp;  
 
 ## Preparation
 
@@ -44,11 +51,11 @@ The challenge labs are composed of 6 environments: 3 networks (Medtech, Relia an
 
 After getting my bonus points, I went for the [TJ Null’s list][2] and completed around 44 machines from PG Practice. Overall it was a good practice, even though some of the machines were broken.
 
-</br>
+&nbsp;  
 
 ![OSCP bonus points](/assets/img/certifications/oscp_bonus.png)
 
-</br>
+&nbsp;  
 
 ## Exam Day
 
@@ -56,9 +63,13 @@ I scheduled my exam for 6 p.m. and had everything ready (snapshots, cheat sheets
 
 After dismounting my second monitor, I started the exam and my first step was to enumerate all the machines, starting with the AD and going to the stand-alones after.
 
-In the first hour, I already had a foothold on the AD set but couldn’t escalate privileges. After 6 hours of reviewing all screenshots and enumerating the AD set again, I went for the stand-alones and was able to get a low privilege user, but again, I was unable to escalate to root. After some time, I decided that I needed some rest, so I went to sleep for the next 4 hours.
+In the first hour, I already had a foothold on the AD set but couldn’t escalate privileges. After 6 hours of reviewing all screenshots and enumerating the AD set again, I went for the stand-alones and was able to get a low privilege user, but again, I was unable to escalate to root. After some time, I decided that I needed some rest, so I went to ~~try to~~ sleep for the next 4 hours.  
 
-![TheOffice MS kill myself](https://tenor.com/4rLu.gif)
+&nbsp;  
+
+![TheOffice MS kill myself](/assets/gifs/I_m_going_to_kill_myself_The_Office.gif)
+
+&nbsp;  
 
 After some terrible sleep, I started enumerating the first AD machine again and was able to finally escalate privileges and pivot to the other host. From there, it took me less than an hour to fully compromise the AD set.
 
@@ -66,7 +77,7 @@ With 60 pts (AD + stand-alone low user + bónus points), I took another break an
 
 Even though I already had enough points to pass, I tried to root the final standalone but without success (even though I’m pretty sure I was on the right track but unfortunately couldn’t breach it).
 
-</br>
+&nbsp;  
 
 ## Exam Tips
 
@@ -76,13 +87,15 @@ Even though I already had enough points to pass, I tried to root the final stand
 * Take snapshots from your kali machine. The last thing you want is having to install a fresh Kali VM in the middle of the exam, without the tools you’re used to.
 * Use and abuse ligolo and netexec.
 
-</br>
+&nbsp;  
 
 ## Conclusion
 
 It was a long road and one I thoroughly enjoyed. I’m very proud of my exam results and that I passed on the first attempt. I am now determined to complete CRTO from Zero-Point Security, let’s see how it goes!
 
-![TheOffice MS and Dwight dancing](https://tenor.com/tUCwrk6O6zL.gif)
+&nbsp;  
+
+![TheOffice MS and Dwight dancing](/assets/gifs/the-office-michael-scott.gif)
 
 [1]: https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course
 [2]: https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview#
