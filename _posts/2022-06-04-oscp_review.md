@@ -90,7 +90,9 @@ Even though I already had enough points to pass, I tried to root the final stand
 
 ## Conclusion
 
-It was a long road and one I thoroughly enjoyed. I’m very proud of my exam results and that I passed on the first attempt. I am now determined to complete CRTO from Zero-Point Security, let’s see how it goes!
+It was a long road and one I thoroughly enjoyed. I’m very proud of my exam results and that I passed on the first attempt. 
+
+I am now determined to complete the CRTO from Zero-Point Security, let’s see how it goes!
 
 
 
