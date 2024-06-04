@@ -1,4 +1,5 @@
 ---
+layout: default
 title: OSCP Review & Tips (2024)
 date: 2024-06-05 12:00:00 -500
 categories: [certifications,review]
