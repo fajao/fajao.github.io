@@ -14,10 +14,10 @@ order: 1
 The following is just some of the wide range of topics I hope to discuss and cover.
 
 - [ ] SOC Automation Project (HomeLab)
-- [ ] PNPT vs OSCP - journey, tips, etc...
+- [ ] PNPT - journey, tips, etc...
+- [x] OSCP - journey, tips, etc...
 - [ ] HTB boxes walkthrough
 - [ ] Aerial photography (some photos I took a couple years ago)
-- [ ] Gaming and cinema related
 
 ## Socials
 
