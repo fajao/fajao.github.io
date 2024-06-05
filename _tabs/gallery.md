@@ -21,4 +21,8 @@ order: 2
     <img src="/assets/img/photography/austria/austria_003.jpg" alt="Desert" style="width: 100%;">
     <p>Endless desert dunes under a clear sky.</p>
   </div>
+    <div style="flex: 1; min-width: 250px;">
+    <img src="/assets/img/photography/austria/austria_003.jpg" alt="Desert" style="width: 100%;">
+    <p>Endless desert dunes under a clear sky.</p>
+  </div>
 </div>
