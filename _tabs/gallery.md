@@ -17,7 +17,7 @@ layout: default
     data-pswp-height="738" 
     data-cropped="true" 
     target="_blank">
-    <img src="/assets/img/photography/austria/austria_002.jpg" alt="" />
+    <img src="/assets/img/photography/austria/austria_002.jpg" alt="another one" />
   </a>
   <!-- data-pswp-src with custom URL in href -->
   <a href="/assets/img/photography/austria/austria_003.jpg" 
