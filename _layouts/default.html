@@ -15,7 +15,9 @@ layout: compress
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
-       
+   
+  <script src="/assets/js/activate_photoswipe.js" type="module"></script>
+
   <body>
     {% include sidebar.html lang=lang %}
 
