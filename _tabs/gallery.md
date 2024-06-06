@@ -2,7 +2,7 @@
 icon: fas fa-camera-retro
 order: 2
 layout: default
-title: Galleries (main page)
+title: Gallery
 ---
 
 ### Available galleries:
