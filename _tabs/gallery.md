@@ -8,14 +8,11 @@ layout: default
 
 <script type="module">
 import PhotoSwipeLightbox from '/assets/js/photoswipe/photoswipe-lightbox.esm.js';
-import PhotoSwipe from '/assets/js/photoswipe/photoswipe.esm.js';
-
 const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery--no-dynamic-import',
+  gallery: '#gallery--getting-started',
   children: 'a',
-  pswpModule: PhotoSwipe
+  pswpModule: () => import('/assets/js/photoswipe/photoswipe.esm.js')
 });
-
 lightbox.init();
 </script>
 
