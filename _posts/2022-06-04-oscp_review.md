@@ -8,13 +8,15 @@ tags: [oscp,exam,tips]
 
 # OSCP Review & Tips (2024)
 
-<p align="center">
-  <img alt="OSCP certificate" src="/assets/img/certifications/oscp_cert.png" width="926">
-  <br>
-    <em>OSCP certificate</em>
-</p>
+A couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal OSCP journey and some tips you can use to help yourself pass the exam as well.
 
-&nbsp;  
+![OSCP certificate](/assets/img/certifications/oscp_cert.png)
+
+<figcaption>OSCP certificate</figcaption>
+<figure class="center">
+  <img src="/assets/img/certifications/oscp_cert.png" alt="OSCP certificate">
+  <figcaption>OSCP certificate</figcaption>
+</figure>
 
 ## OSCP Exam
 
@@ -62,12 +64,6 @@ After getting my bonus points, I went for the [TJ Null’s list][2] and complete
 
 {:.image-caption}
 *PEN-200 Dashboard*
-
-<p align="center">
-  <img alt="OSCP bonus points" src="/assets/img/certifications/oscp_bonus.png" width="1859">
-  <br>
-    <em>PEN-200 Dashboard</em>
-</p>
 
 &nbsp;  
 
