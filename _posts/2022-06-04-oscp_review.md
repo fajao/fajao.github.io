@@ -66,10 +66,10 @@ After getting my bonus points, I went for the [TJ Null’s list][2] and complete
 
 ## Exam Day
 
-I scheduled my exam for 6 p.m. and had everything ready (snapshots, cheat sheets, water, food, identification, everything). The identification process started at 5:45 and for some reason I couldn’t share my second screen, even though I tested it the day before
+I scheduled my exam for 6 p.m. and had everything ready (snapshots, cheat sheets, water, food, identification, everything). The identification process started at 5:45 and for some reason I couldn’t share my second screen, even though I tested it the day before.  
 
 > Schedule your exam in advance, don't be like me!
-{: .prompt-info }
+{: .prompt-info }  
 
 After dismounting my second monitor, I started the exam and my first step was to enumerate all the machines, starting with the AD and going to the stand-alones after.
 

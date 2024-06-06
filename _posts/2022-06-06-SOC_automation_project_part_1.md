@@ -18,9 +18,7 @@ In this project, we will delve into the setup and automation of our Secure Opera
 
 The project is structured into several modules, with each module focusing on a distinct component of the lab. Should any changes occur in the future, a note will be added at the beginning of the relevant module to highlight the updates.
 
-This build is largely inspired by the MyDFIR Home Lab project and the primary aim is to gain practical experience with a variety of tools used in a SOC environment.
-
-&nbsp;  
+This build is largely inspired by the [MyDFIR Home Lab project](https://youtu.be/Lb_ukgtYK_U?si=yr7cF7uzDXVWlLt1) and the primary aim is to gain practical experience with a variety of tools used in a SOC environment.
 
 ## Overview
 
@@ -34,10 +32,10 @@ This build is largely inspired by the MyDFIR Home Lab project and the primary ai
 
 * SOC Analyst email (squarex)  
 
-![Diagram](/assets/img/soc_project/part1/socautomation3.drawio.svg)
-
 > In this build, we will be utilizing Digital Ocean cloud servers and VMware. However, you are free to use any other cloud server or hypervisor that you prefer (you can even host everything locally if you have the necessary resources)
 {: .prompt-warning }
+
+![Diagram](/assets/img/soc_project/part1/socautomation3.drawio.svg)
 
 &nbsp;  
 
