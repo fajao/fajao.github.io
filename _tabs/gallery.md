@@ -24,7 +24,7 @@ layout: default
     data-pswp-width="738" 
     data-pswp-height="1640" 
     target="_blank">
-    <img src="/assets/img/photography/austria/austria_003.jpg" alt="" />
+    <img src="/assets/img/photography/austria/austria_003.jpg" alt="what the hell" />
   </a>
   <!-- Without thumbnail: -->
   <a href="/assets/img/photography/austria/austria_004.jpg" 
