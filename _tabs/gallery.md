@@ -1,17 +1,19 @@
 ---
-layout: default
 icon: fas fa-camera-retro
 order: 2
-import PhotoSwipeLightbox from '/photoswipe/photoswipe-lightbox.esm.js';
-import PhotoSwipe from '/photoswipe/photoswipe.esm.js';
+layout:
+  import PhotoSwipeLightbox from '/assets/js/photoswipe/photoswipe-lightbox.esm.js';
+  import PhotoSwipe from '/assets/js/photoswipe/photoswipe.esm.js';
 
-const lightbox = new PhotoSwipeLightbox({
-  gallery: '#gallery--no-dynamic-import',
-  children: 'a',
-  pswpModule: PhotoSwipe
-});
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: '#gallery--no-dynamic-import',
+    children: 'a',
+    pswpModule: PhotoSwipe
+  });
 
-lightbox.init();
+  lightbox.init();
+
+  <link rel="stylesheet" href="/assets/css/photoswipe/dist/photoswipe.css">
 ---
 
 <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
