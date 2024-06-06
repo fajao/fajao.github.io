@@ -14,7 +14,7 @@ A couple of months ago, I attempted to pass the Offsec Certified Professional (O
 
 <div class="lightgallery">
     <a href="/assets/img/certifications/oscp_cert.png">
-        <img src="/assets/img/certifications/oscp_cert.png" />
+        <img alt "OSCP certificate" src="/assets/img/certifications/oscp_cert.png" />
     </a>
 </div>
 
