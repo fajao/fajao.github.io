@@ -19,7 +19,7 @@ const lightbox = new PhotoSwipeLightbox({
 lightbox.init();
 </script>
 
-<link rel="stylesheet" href="/assets/css/photoswipe/dist/photoswipe.css">
+<link rel="stylesheet" href="/assets/css/photoswipe/photoswipe.css">
 
 </header>
 
