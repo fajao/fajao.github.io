@@ -1,0 +1,27 @@
+---
+layout: default
+---
+	
+<script src="/assets/js/lightbox2/lightbox-plus-jquery.min.js"></script>
+<script src="/assets/js/lightbox2/lightbox.min.js"></script>
+<link href="/assets/css/lightbox2/lightbox.css" rel="stylesheet" />
+
+<p>default header for all gallery pages</p>
+
+{% for gallery in site.data.galleries %}
+  {% if gallery.id == page.galleryid %}
+    <h1>{{ gallery.description }}</h1>
+    <ol>
+    {% for image in gallery.images %}
+      <li>
+        {{ image.text }}<br>
+        <a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" title="{{ image.text }}">
+          <img src="{{ gallery.imagefolder }}/{{ image.thumb }}">
+        </a>
+      </li>
+    {% endfor %}
+    </ol>
+  {% endif %}
+{% endfor %}
+
+<p>default footer for all gallery pages</p>
