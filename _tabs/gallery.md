@@ -4,6 +4,25 @@ order: 2
 layout: default
 ---
 
+<head>
+  <script type="module">
+    import PhotoSwipeLightbox from '/assets/js/photoswipe/photoswipe-lightbox.esm.js';
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery--zoom-transition',
+      children: 'a',
+      showHideAnimationType: 'zoom',
+      pswpModule: () => import('/assets/js/photoswipe/photoswipe.esm.js')
+    });
+    lightbox.init();
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/photoswipe/photoswipe.css">
+</head>
+
+</body>
+
+<p>Here are some photos from previous trips I took</p>
+
 <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
   <a href="/assets/img/photography/austria/austria_001.jpg" 
     data-pswp-width="1640" 
