@@ -1,6 +1,6 @@
 ---
 layout: default
-title: OSCP Review & Tips (2024)
+title: SOC Automation Project
 date: 2024-06-06 04:00:00 -500
 categories: [projects,SOC automation]
 tags: [soc,build,soar,siem,xdr,edr,wazuh,shuffle,thehive]
@@ -10,7 +10,7 @@ image:
   alt: SOC Build
 ---
 
-# Building a Virtual Security Home Lab: Part 1 - Network Topology
+# Building a SOC automation Home Lab: Part 1 - Overview
 
 ### A step-by-step guide for building your very own SOC Automation Home Lab using VMWare and Digital Ocean cLoud provider
 
@@ -34,13 +34,11 @@ This build is largely inspired by the MyDFIR Home Lab project and the primary ai
 
 * SOC Analyst email (squarex)  
 
-&nbsp;  
-
 ![Diagram](/assets/img/soc_project/part1/socautomation3.drawio.svg)
 
-&nbsp;  
-
 > In this build, we will be utilizing Digital Ocean cloud servers and VMware. However, you are free to use any other cloud server or hypervisor that you prefer (you can even host everything locally if you have the necessary resources)
-{: .prompt-tip }
+{: .prompt-warning }
+
+&nbsp;  
 
 In the next module, we will begin with the installation and configuration of our Windows 10 host, followed by the installation of our wazuh and thehive servers.

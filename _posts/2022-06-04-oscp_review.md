@@ -10,7 +10,7 @@ image:
   alt: OSCP
 ---
 
-# OSCP Review & Tips (2024)
+# OSCP Review and Tips (2024)
 
 A couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal OSCP journey and some tips you can use to help yourself pass the exam as well.
 
