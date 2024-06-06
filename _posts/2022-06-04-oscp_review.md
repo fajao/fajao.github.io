@@ -6,7 +6,6 @@ categories: [certifications,oscp]
 tags: [oscp,exam,tips,certifications]
 author: Pedro Torres
 image: /assets/img/certifications/oscp.png
-media_subpath: /assets/img/certifications
 ---
 
 # OSCP Review & Tips (2024)
@@ -16,25 +15,9 @@ A couple of months ago, I attempted to pass the Offsec Certified Professional (O
 ![OSCP certificate](/assets/img/certifications/oscp_cert.png)
 _OSCP Certificate_
 
-![[oscp_cert.png|640]]
-
 ## OSCP Exam
 
 The Offensive Security Certified Professional (OSCP) certification is one of the most respected and sought-after credentials in the cybersecurity field. The OSCP exam gives you 23 hours and 45 minutes to hack into 6 target machines (3 stand-alone machines and 1 Active Directory environment that contains 2 hosts and 1 domain controller). Each machine compromised grants you an amount of points, and you need at least 70 points to pass.
-
-<style>
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 8px;
-  }
-
-  img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
 
 | Machine | Points | Description |
 | :------: | :---: | :--- |
