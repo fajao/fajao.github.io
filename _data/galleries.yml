@@ -1,4 +1,4 @@
-- id: Scotland
+- id: scotland_gal
   description: First trip outside Portugal
   imagefolder: /assets/img/photography/scotland
   images:
@@ -11,7 +11,7 @@
   - name: scotland_003.jpg
     thumb: scotland_003_thumbnail.jpg
     text: The third image
-- id: Austria
+- id: austria_gal
   description: This is even another gallery!
   imagefolder: /assets/img/photography/austria
   images:
