@@ -1,20 +1,27 @@
 ---
 icon: fas fa-camera-retro
 order: 2
-layout:
-  import PhotoSwipeLightbox from '/assets/js/photoswipe/photoswipe-lightbox.esm.js';
-  import PhotoSwipe from '/assets/js/photoswipe/photoswipe.esm.js';
-
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: '#gallery--no-dynamic-import',
-    children: 'a',
-    pswpModule: PhotoSwipe
-  });
-
-  lightbox.init();
-
-  <link rel="stylesheet" href="/assets/css/photoswipe/dist/photoswipe.css">
+layout: default
 ---
+
+<header>
+
+<script type="module">
+import PhotoSwipeLightbox from '/assets/js/photoswipe/photoswipe-lightbox.esm.js';
+import PhotoSwipe from '/assets/js/photoswipe/photoswipe.esm.js';
+
+const lightbox = new PhotoSwipeLightbox({
+  gallery: '#gallery--no-dynamic-import',
+  children: 'a',
+  pswpModule: PhotoSwipe
+});
+
+lightbox.init();
+</script>
+
+<link rel="stylesheet" href="/assets/css/photoswipe/dist/photoswipe.css">
+
+</header>
 
 <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
   <a href="/assets/img/photography/austria/austria_001.jpg" 
