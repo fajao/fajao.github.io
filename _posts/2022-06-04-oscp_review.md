@@ -12,12 +12,6 @@ A couple of months ago, I attempted to pass the Offsec Certified Professional (O
 
 [![OSCP certificate](/assets/img/certifications/oscp_cert.png)](/assets/img/certifications/oscp_cert.png)
 
-<div class="lightgallery">
-    <a href="/assets/img/certifications/oscp_cert.png">
-        <img alt "OSCP certificate" src="/assets/img/certifications/oscp_cert.png" />
-    </a>
-</div>
-
 &nbsp;  
 
 ## OSCP Exam
