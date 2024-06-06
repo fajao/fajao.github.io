@@ -19,7 +19,7 @@ layout: default
   <link rel="stylesheet" href="/assets/css/photoswipe/photoswipe.css">
 </head>
 
-</body>
+<body>
 
 <p>Here are some photos from previous trips I took</p>
 
