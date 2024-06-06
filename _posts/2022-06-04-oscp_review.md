@@ -11,7 +11,9 @@ tags: [oscp,exam,tips]
 A couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal OSCP journey and some tips you can use to help yourself pass the exam as well.
 
 ![OSCP certificate](/assets/img/certifications/oscp_cert.png){: width="926" height="724" lqip="/assets/img/certifications/oscp_cert" }
-_OSCP Certificate_
+
+{:.image-caption}
+*OSCP certificate*
 
 &nbsp;  
 
@@ -58,6 +60,9 @@ The challenge labs are composed of 6 environments: 3 networks (Medtech, Relia an
 After getting my bonus points, I went for the [TJ Null’s list][2] and completed around 44 machines from PG Practice. Overall it was a good practice, even though some of the machines were broken.
 
 ![OSCP bonus points](/assets/img/certifications/oscp_bonus.png)
+
+{:.image-caption}
+*PEN-200 Dashboard*
 
 &nbsp;  
 
