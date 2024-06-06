@@ -15,6 +15,12 @@ layout: compress
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="{{ page.lang | default: site.alt_lang | default: site.lang }}" {{ prefer_mode }}>
   {% include head.html %}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/lightgallery.css">
+  </head>
 
   <body>
     {% include sidebar.html lang=lang %}
@@ -78,5 +84,13 @@ layout: compress
     {% include js-selector.html lang=lang %}
 
     {% include_cached search-loader.html lang=lang %}
+
+    <!-- Include LightGallery scripts -->
+    <script src="/js/lightgallery.min.js"></script>
+    <script src="/js/lg-thumbnail.min.js"></script>
+    <script src="/js/lg-fullscreen.min.js"></script>
+    
+    <!-- Custom LightGallery initialization script -->
+    <script src="/js/lightgallery-init.js"></script>
   </body>
 </html>
