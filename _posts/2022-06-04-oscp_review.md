@@ -3,7 +3,10 @@ layout: default
 title: OSCP Review & Tips (2024)
 date: 2024-06-04 12:00:00 -500
 categories: [certifications,oscp]
-tags: [oscp,exam,tips]
+tags: [oscp,exam,tips,certifications]
+author: Pedro Torres
+image: /assets/img/certifications/oscp.png
+media_subpath: /assets/img/certifications
 ---
 
 # OSCP Review & Tips (2024)
@@ -11,12 +14,9 @@ tags: [oscp,exam,tips]
 A couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal OSCP journey and some tips you can use to help yourself pass the exam as well.
 
 ![OSCP certificate](/assets/img/certifications/oscp_cert.png)
+_OSCP Certificate_
 
-<figcaption>OSCP certificate</figcaption>
-<figure class="center">
-  <img src="/assets/img/certifications/oscp_cert.png" alt="OSCP certificate">
-  <figcaption>OSCP certificate</figcaption>
-</figure>
+![[oscp_cert.png|640]]
 
 ## OSCP Exam
 
@@ -61,15 +61,16 @@ The challenge labs are composed of 6 environments: 3 networks (Medtech, Relia an
 After getting my bonus points, I went for the [TJ Null’s list][2] and completed around 44 machines from PG Practice. Overall it was a good practice, even though some of the machines were broken.
 
 ![OSCP bonus points](/assets/img/certifications/oscp_bonus.png)
-
-{:.image-caption}
-*PEN-200 Dashboard*
+_PEN-200 Dashboard_
 
 &nbsp;  
 
 ## Exam Day
 
-I scheduled my exam for 6 p.m. and had everything ready (snapshots, cheat sheets, water, food, identification, everything). The identification process started at 5:45 and for some reason I couldn’t share my second screen, even though I tested it the day before.
+I scheduled my exam for 6 p.m. and had everything ready (snapshots, cheat sheets, water, food, identification, everything). The identification process started at 5:45 and for some reason I couldn’t share my second screen, even though I tested it the day before
+
+> [!INFO] 
+> Schedule your exam in advance, don't be like me! {.prompt}
 
 After dismounting my second monitor, I started the exam and my first step was to enumerate all the machines, starting with the AD and going to the stand-alones after.
 
