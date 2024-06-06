@@ -10,7 +10,7 @@ tags: [oscp,exam,tips]
 
 A couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal OSCP journey and some tips you can use to help yourself pass the exam as well.
 
-[![OSCP certificate](/assets/img/certifications/oscp_cert.png)]{: width="926" height="724"}
+![OSCP certificate](/assets/img/certifications/oscp_cert.png){: width="926" height="724"}
 __OSCP Certificate__
 
 &nbsp;  
