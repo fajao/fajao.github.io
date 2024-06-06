@@ -5,7 +5,9 @@ date: 2024-06-04 12:00:00 -500
 categories: [certifications,oscp]
 tags: [oscp,exam,tips,certifications]
 author: Pedro Torres
-image: /assets/img/certifications/oscp.png
+image: 
+  path: /assets/img/certifications/oscp.png
+  alt: OSCP
 ---
 
 # OSCP Review & Tips (2024)
@@ -13,11 +15,24 @@ image: /assets/img/certifications/oscp.png
 A couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal OSCP journey and some tips you can use to help yourself pass the exam as well.
 
 ![OSCP certificate](/assets/img/certifications/oscp_cert.png)
-_OSCP Certificate_
 
 ## OSCP Exam
 
 The Offensive Security Certified Professional (OSCP) certification is one of the most respected and sought-after credentials in the cybersecurity field. The OSCP exam gives you 23 hours and 45 minutes to hack into 6 target machines (3 stand-alone machines and 1 Active Directory environment that contains 2 hosts and 1 domain controller). Each machine compromised grants you an amount of points, and you need at least 70 points to pass.
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
 
 | Machine | Points | Description |
 | :------: | :---: | :--- |
@@ -52,8 +67,8 @@ _PEN-200 Dashboard_
 
 I scheduled my exam for 6 p.m. and had everything ready (snapshots, cheat sheets, water, food, identification, everything). The identification process started at 5:45 and for some reason I couldn’t share my second screen, even though I tested it the day before
 
-> [!INFO] 
-> Schedule your exam in advance, don't be like me! {.prompt}
+> Schedule your exam in advance, don't be like me!
+{: .prompt-info }
 
 After dismounting my second monitor, I started the exam and my first step was to enumerate all the machines, starting with the AD and going to the stand-alones after.
 
