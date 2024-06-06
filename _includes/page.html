@@ -1,12 +1,2 @@
-<script type="module">
-  import PhotoSwipeLightbox from '/assets/js/photoswipe/photoswipe-lightbox.esm.js';
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: '#gallery--zoom-transition',
-    children: 'a',
-    showHideAnimationType: 'zoom',
-    pswpModule: () => import('/assets/js/photoswipe/photoswipe.esm.js')
-  });
-  lightbox.init();
-</script>
-
-  <link rel="stylesheet" href="/assets/css/photoswipe/photoswipe.css">
+<script src="/assets/js/lightbox2/lightbox.js"></script>
+<link rel="stylesheet" href="/assets/css/lightbox2/lightbox.css">
