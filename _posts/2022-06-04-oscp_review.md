@@ -16,6 +16,8 @@ A couple of months ago, I attempted to pass the Offsec Certified Professional (O
 
 ![OSCP certificate](/assets/img/certifications/oscp_cert.png)
 
+&nbsp;  
+
 ## OSCP Exam
 
 The Offensive Security Certified Professional (OSCP) certification is one of the most respected and sought-after credentials in the cybersecurity field. The OSCP exam gives you 23 hours and 45 minutes to hack into 6 target machines (3 stand-alone machines and 1 Active Directory environment that contains 2 hosts and 1 domain controller). Each machine compromised grants you an amount of points, and you need at least 70 points to pass.
@@ -59,7 +61,6 @@ The challenge labs are composed of 6 environments: 3 networks (Medtech, Relia an
 After getting my bonus points, I went for the [TJ Null’s list][2] and completed around 44 machines from PG Practice. Overall it was a good practice, even though some of the machines were broken.
 
 ![OSCP bonus points](/assets/img/certifications/oscp_bonus.png)
-_PEN-200 Dashboard_
 
 &nbsp;  
 
@@ -74,7 +75,9 @@ After dismounting my second monitor, I started the exam and my first step was to
 
 In the first hour, I already had a foothold on the AD set but couldn’t escalate privileges. After 6 hours of reviewing all screenshots and enumerating the AD set again, I went for the stand-alones and was able to get a low privilege user, but again, I was unable to escalate to root. After some time, I decided that I needed some rest, so I went to ~~try to~~ sleep for the next 4 hours.  
 
+
 ![TheOffice MS kill myself](/assets/gifs/I_m_going_to_kill_myself_The_Office.gif)
+
 
 After some terrible sleep, I started enumerating the first AD machine again and was able to finally escalate privileges and pivot to the other host. From there, it took me less than an hour to fully compromise the AD set.
 
