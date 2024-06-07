@@ -37,7 +37,7 @@ This build is largely inspired by the [MyDFIR Home Lab project](https://youtu.be
 
 ## Objective
 
-In this project, we will leverage the comprehensive SIEM and XDR capabilities of **Wazuh**. Specifically, we will generate telemetry from our Wazuh agent related to mimikatz.exe, which will trigger an alert based on a custom rule we created. Furthermore, we will utilize **Shuffle SOAR automation** features to enhance our incident response. This includes enriching Indicators of Compromise (IOCs) using the **VirusTotal API**, creating alerts in **theHive**, and notifying the SOC analyst via email with detailed information about the alert.
+In this project, we will leverage the comprehensive **SIEM** and **XDR** capabilities of **Wazuh**. Specifically, we will generate telemetry from our Wazuh agent related to mimikatz.exe, which will trigger an alert based on a custom rule we created. Furthermore, we will utilize **Shuffle SOAR automation** features to enhance our incident response. This includes enriching Indicators of Compromise (IOCs) using the **VirusTotal API**, creating alerts in **theHive**, and notifying the SOC analyst via email with detailed information about the alert.
 
 ## Next Steps
 
