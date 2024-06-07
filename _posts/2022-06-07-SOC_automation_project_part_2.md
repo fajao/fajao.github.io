@@ -174,6 +174,7 @@ Next, open a PowerShell terminal with administrative privileges and run the foll
 ```powershell
 .\sysmon64.exe -i .\sysmonconfig.xml
 ```
+
 ![Creating new VM_45](/assets/img/soc_project/part2/045.png)
 
 Agree to the license terms and after a few seconds, the **Sysmon service** will be running.
