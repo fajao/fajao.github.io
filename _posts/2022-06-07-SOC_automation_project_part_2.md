@@ -167,11 +167,10 @@ Extract the **Sysmon** zip file and move the **sysmonconfig.xml** file to the sa
 
 ![Creating new VM_44](/assets/img/soc_project/part2/044.png)
 
-Next, open a PowerShell terminal with administrative privileges and run the following command to install **Sysmon**:
+Next, open a PowerShell terminal with administrative privileges and run the following command to install **Sysmon**.
 
 ```ps
-.\sysmon64.exe -i .\sysmonconfig.xml
-
+sysmon64.exe -i sysmonconfig.xml
 ```
 
 ![Creating new VM_45](/assets/img/soc_project/part2/045.png)
