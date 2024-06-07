@@ -1,6 +1,6 @@
 ---
 layout: default
-title: SOC Automation Project
+title: SOC Automation Project - Part 1
 date: 2024-06-06 04:00:00 -500
 categories: [projects,SOC automation]
 tags: [soc,build,soar,siem,xdr,edr,wazuh,shuffle,thehive]
@@ -37,6 +37,6 @@ This build is largely inspired by the [MyDFIR Home Lab project](https://youtu.be
 
 ![Diagram](/assets/img/soc_project/part1/socautomation3.drawio.svg)
 
-&nbsp;  
+## Next Steps
 
-In the next module, we will begin with the installation and configuration of our Windows 10 host, followed by the installation of our wazuh and thehive servers.
+In the next module, we will cover the installation and configuration of our Windows 10 host. Additionally, we will install Sysmon on our virtual machine (VM) host.
