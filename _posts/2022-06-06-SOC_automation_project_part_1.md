@@ -5,9 +5,7 @@ date: 2024-06-06 04:00:00 -500
 categories: [projects,SOC automation]
 tags: [soc,build,soar,siem,xdr,edr,wazuh,shuffle,thehive]
 author: Pedro Torres
-image: 
-  path: /assets/img/soc_project/part1/soc_build.png
-  alt: SOC Build
+image: /assets/img/soc_project/part1/soc_build.png
 ---
 
 # Building a SOC automation Home Lab: Part 1 - Overview

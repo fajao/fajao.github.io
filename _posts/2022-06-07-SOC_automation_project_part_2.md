@@ -5,9 +5,7 @@ date: 2024-06-07 04:00:00 -500
 categories: [projects,SOC automation]
 tags: [soc,build,soar,siem,xdr,edr,wazuh,shuffle,thehive]
 author: Pedro Torres
-image: 
-  path: /assets/img/soc_project/part1/soc_build.png
-  alt: SOC Build
+image: /assets/img/soc_project/part1/soc_build.png
 ---
 
 # Building a SOC automation Home Lab: Part 2 - Windows 10 VM installation and configuration 
@@ -25,15 +23,13 @@ In this module, we will cover the installation and configuration of our Windows 
 
 1. Go to the following link: [Download Windows 10 Enterprise 64-bit edition.][1]
 
-![Download Windows](/assets/img/soc_project/part2/000.png)
-
 2. The downloaded file will have the `.iso` extension.
+
+![Download Windows](/assets/img/soc_project/part2/000.png)
 
 ### Windows 10 VM Creation
 
 1. Launch VMware and select `Create a New Virtual Machine` from the dashboard.
-
-![Creating new VM_1](/assets/img/soc_project/part2/001.png)
 
 2. Choose the following options:
 
@@ -44,6 +40,8 @@ In this module, we will cover the installation and configuration of our Windows 
 * **Name your VM and choose its location.**
 * **Amount of storage space**: `100 GB`
 * Click `Finish` to complete the creation.
+
+![Creating new VM_1](/assets/img/soc_project/part2/001.png)
 
 ![Creating new VM_2](/assets/img/soc_project/part2/002.png)
 
@@ -61,15 +59,15 @@ Before starting the VM, we need to make some changes first.
 
 1. Select `Edit virtual machine settings`.
 
-![Creating new VM_9](/assets/img/soc_project/part2/009.png)
-
 2. I changed the memory alocated to 4GB and 1 processor, but you can leave it as it is.
+
+3. Under the `CD/DVD (SATA)` option, change the connection to the Windows `.iso` file we downloaded earlier.
+
+![Creating new VM_9](/assets/img/soc_project/part2/009.png)
 
 ![Creating new VM_10](/assets/img/soc_project/part2/010.png)
 
 ![Creating new VM_11](/assets/img/soc_project/part2/011.png)
-
-3. Under the `CD/DVD (SATA)` option, change the connection to the Windows `.iso` file we downloaded earlier.
 
 ![Creating new VM_12](/assets/img/soc_project/part2/012.png)
 
@@ -125,9 +123,9 @@ Choose and answer the security questions, disable all privacy settings, and fina
 
 VMware Tools enhances the VM's performance and adds functionalities such as full-screen resolution (without stretching), copy-paste between guest and host, automatic shutdowns and reboots, and time synchronization. In order to install VMware Tools:
 
-1. Go to `VM > Install VMware Tools` on the top left side.
+* Go to `VM > Install VMware Tools` on the top left side.
 
-2. Open the **DVD Drive (D:) VMware Tools** after a few seconds and run `setup64.exe`.
+* Open the **DVD Drive (D:) VMware Tools** after a few seconds and run `setup64.exe`.
 
 ![Creating new VM_29](/assets/img/soc_project/part2/029.png)
 
@@ -135,7 +133,7 @@ VMware Tools enhances the VM's performance and adds functionalities such as full
 
 ![Creating new VM_31](/assets/img/soc_project/part2/031.png)
 
-3. Select `Next > Next > Finish` and restart to complete the installation and restart the VM.
+* Select `Next > Next > Finish` and restart to complete the installation and restart the VM.
 
 ![Creating new VM_32](/assets/img/soc_project/part2/032.png)
 
@@ -171,8 +169,9 @@ Extract the **Sysmon** zip file and move the **sysmonconfig.xml** file to the sa
 
 Next, open a PowerShell terminal with administrative privileges and run the following command to install **Sysmon**:
 
-```powershell
+```ps
 .\sysmon64.exe -i .\sysmonconfig.xml
+
 ```
 
 ![Creating new VM_45](/assets/img/soc_project/part2/045.png)

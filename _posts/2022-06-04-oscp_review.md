@@ -5,9 +5,7 @@ date: 2024-06-04 12:00:00 -500
 categories: [certifications,oscp]
 tags: [oscp,exam,tips,certifications]
 author: Pedro Torres
-image: 
-  path: /assets/img/certifications/oscp.png
-  alt: OSCP
+image: /assets/img/certifications/oscp.png
 ---
 
 # OSCP Review and Tips (2024)
