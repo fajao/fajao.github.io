@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SOC Automation Project - Part 2
-date: 2024-06-07 04:00:00 -500
+date: 2024-07-07 04:00:00 -500
 categories: [projects,SOC automation]
 tags: [soc,build,soar,siem,xdr,edr,wazuh,shuffle,thehive]
 author: Pedro Torres
