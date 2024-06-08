@@ -1,5 +1,4 @@
 ---
-layout: default
 icon: fa fa-camera
 order: 2
 ---

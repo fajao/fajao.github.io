@@ -1,5 +1,5 @@
 ---
 layout: default
-icon: fas fa-stream
+icon: fas fa-tags
 order: 5
 ---
