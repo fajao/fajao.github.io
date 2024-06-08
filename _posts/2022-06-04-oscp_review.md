@@ -74,10 +74,10 @@ Even though I already had enough points to pass, I tried to root the final stand
 ## Exam Tips
 
 * **Take breaks**, do not underestimate the power of a short 10 minute break.
-* Prepare your methodology. For the AD set, the mock exams are a good practice and for the stand-alones go with the PGP boxes. I developed my cheat sheet from [0xBEN structure][3]{:target="_blank"}.
-* Treat the mock exams like a real exam attempt. With it, not only will you train your time management but you’ll also have the report format ready for when you go for the real thing.
-* Take snapshots from your kali machine. The last thing you want is having to install a fresh Kali VM in the middle of the exam, without the tools you’re used to.
-* Use and abuse ligolo and netexec. 
+* **Prepare your methodology**. For the AD set, the mock exams are a good practice and for the stand-alones go with the PGP boxes. I developed my cheat sheet from [0xBEN structure][3]{:target="_blank"}.
+* **Treat the mock exams like a real exam attempt**. With it, not only will you train your time management but you’ll also have the report format ready for when you go for the real thing.
+* **Take snapshots of your kali machine**. The last thing you want is having to install a fresh Kali VM in the middle of the exam, without the tools you’re used to.
+* Use and abuse **ligolo and netexec**. 
 
 ## Conclusion
 
