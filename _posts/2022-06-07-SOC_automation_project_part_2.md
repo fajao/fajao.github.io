@@ -8,7 +8,7 @@ image: /assets/img/soc_project/part1/soc_build.png
 
 # Building a SOC automation Home Lab: Part 2 - Windows 10 VM installation and configuration 
 
-### A step-by-step guide for building your very own SOC Automation Home Lab using VMWare and Digital Ocean cloud provider
+### A step-by-step guide for building your very own SOC Automation Home Lab using VMWare and DigitalOcean cloud provider
 
 In this module, we will cover the installation and configuration of our Windows 10. Additionally, we will install Sysmon on our virtual machine (VM) host.
 

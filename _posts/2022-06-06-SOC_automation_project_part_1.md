@@ -8,7 +8,7 @@ image: /assets/img/soc_project/part1/soc_build.png
 
 # Building a SOC automation Home Lab: Part 1 - Overview
 
-### A step-by-step guide for building your very own SOC Automation Home Lab using VMWare and Digital Ocean cloud provider
+### A step-by-step guide for building your very own SOC Automation Home Lab using VMWare and DigitalOcean cloud provider
 
 In this project, we will delve into the setup and automation of our Secure Operations Center (SOC).
 
@@ -22,13 +22,13 @@ This build is largely inspired by the [MyDFIR Home Lab project](https://youtu.be
 
 * Windows 10 Host (hosted in VMware)
 
-* Wazuh server (hosted in Digital Ocean cloud) 
+* Wazuh server (hosted in DigitalOcean cloud) 
 
-* TheHive server (hosted in Digital Ocean cloud) 
+* TheHive server (hosted in DigitalOcean cloud) 
 
 * SOC Analyst email (squarex)  
 
-> In this build, we will be utilizing Digital Ocean cloud servers and VMware. However, you are free to use any other cloud server or hypervisor that you prefer (you can even host everything locally if you have the necessary resources)
+> In this build, we will be utilizing DigitalOcean cloud servers and VMware. However, you are free to use any other cloud server or hypervisor that you prefer (you can even host everything locally if you have the necessary resources)
 {: .prompt-warning }
 
 ![Diagram](/assets/img/soc_project/part1/socautomation3.drawio.svg)
