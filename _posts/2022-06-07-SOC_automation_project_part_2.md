@@ -1,18 +1,16 @@
 ---
-layout: default
 title: SOC Automation Project - Part 2
-date: 2024-07-07 04:00:00 -500
+date: 2024-06-07 04:00:00 -500
 categories: [projects,SOC automation]
 tags: [soc,build,soar,siem,xdr,edr,wazuh,shuffle,thehive]
-author: Pedro Torres
 image: /assets/img/soc_project/part1/soc_build.png
 ---
 
 # Building a SOC automation Home Lab: Part 2 - Windows 10 VM installation and configuration 
 
-### A step-by-step guide for building your very own SOC Automation Home Lab using VMWare and Digital Ocean cLoud provider
+### A step-by-step guide for building your very own SOC Automation Home Lab using VMWare and Digital Ocean cloud provider
 
-In this module, we will cover the installation and configuration of our Windows 10 host. Additionally, we will install Sysmon on our virtual machine (VM) host.
+In this module, we will cover the installation and configuration of our Windows 10. Additionally, we will install Sysmon on our virtual machine (VM) host.
 
 > The Windows 10 VM will serve as the Wazuh Agent for our project. However, the number of agents and their OS is up to you, as long as they are supported by Wazuh.
 {: .prompt-info }
@@ -21,7 +19,7 @@ In this module, we will cover the installation and configuration of our Windows 
 
 ### Download Windows
 
-1. Go to the following link: [Download Windows 10 Enterprise 64-bit edition.][1]
+1. Go to the following link: [Download Windows 10 Enterprise 64-bit edition.][1]{:target="_blank"}
 
 2. The downloaded file will have the `.iso` extension.
 
@@ -59,9 +57,10 @@ Before starting the VM, we need to make some changes first.
 
 1. Select `Edit virtual machine settings`.
 
-2. I changed the memory alocated to 4GB and 1 processor, but you can leave it as it is.
+2. Under the `CD/DVD (SATA)` option, change the connection to the Windows `.iso` file we downloaded earlier.
 
-3. Under the `CD/DVD (SATA)` option, change the connection to the Windows `.iso` file we downloaded earlier.
+> I changed the memory alocated to 4GB and 1 processor, but you can leave it as it is.
+{: .prompt-info }
 
 ![Creating new VM_9](/assets/img/soc_project/part2/009.png)
 
@@ -79,7 +78,7 @@ Now, start the Windows machine and proceed with the installation.
 ## Completing Windows installation
 
 After starting the machine, press any key to begin the Windows installation.
-Select your preferred language, time and keyboard layout, then click Install Now.
+Select your preferred language, time and keyboard layout, then click `Install Now`.
 
 ![Creating new VM_13](/assets/img/soc_project/part2/013.png)
 
@@ -105,7 +104,7 @@ After rebooting, select your region and keyboard layout. Next, choose the option
 
 ![Creating new VM_23](/assets/img/soc_project/part2/023.png)
 
-Create a user account with a name and password.
+Insert the name and password of your user account.
 
 ![Creating new VM_24](/assets/img/soc_project/part2/024.png)
 
@@ -119,21 +118,21 @@ Choose and answer the security questions, disable all privacy settings, and fina
 
 ![Creating new VM_28](/assets/img/soc_project/part2/028.png)
 
+Next, we will install VMware tools in order to improve our VM performance.
+
 ### Installing VMware Tools
 
 VMware Tools enhances the VM's performance and adds functionalities such as full-screen resolution (without stretching), copy-paste between guest and host, automatic shutdowns and reboots, and time synchronization. In order to install VMware Tools:
 
-* Go to `VM > Install VMware Tools` on the top left side.
+* Go to `VM > Install VMware Tools` on the top left side of VMware.
 
-* Open the **DVD Drive (D:) VMware Tools** after a few seconds and run `setup64.exe`.
-
-![Creating new VM_29](/assets/img/soc_project/part2/029.png)
+* After a few seconds, open the **DVD Drive (D:) VMware Tools** and run `setup64.exe`.
 
 ![Creating new VM_30](/assets/img/soc_project/part2/030.png)
 
 ![Creating new VM_31](/assets/img/soc_project/part2/031.png)
 
-* Select `Next > Next > Finish` and restart to complete the installation and restart the VM.
+* Select `Next > Next > Finish` and restart to complete the installation.
 
 ![Creating new VM_32](/assets/img/soc_project/part2/032.png)
 
@@ -145,9 +144,11 @@ VMware Tools enhances the VM's performance and adds functionalities such as full
 
 ![Creating new VM_36](/assets/img/soc_project/part2/036.png)
 
+Now that our Windows 10 VM installation is complete, our next step is to install **Sysmon**.
+
 ## Installing Sysmon
 
-Go to the following link to download [Sysmon][2] and while it's downloading, save the **sysmonconfig.xml** file from this [Github Repo][3].
+Go to the following link to download [Sysmon][2]{:target="_blank"} and while it's downloading, save the **sysmonconfig.xml** file from this [Github Repo][3]{:target="_blank"}.
 
 ![Creating new VM_37](/assets/img/soc_project/part2/037.png)
 
@@ -157,25 +158,29 @@ Go to the following link to download [Sysmon][2] and while it's downloading, sav
 
 ![Creating new VM_40](/assets/img/soc_project/part2/040.png)
 
-Extract the **Sysmon** zip file and move the **sysmonconfig.xml** file to the same directory.
+Extract the **Sysmon zip file** and move the **sysmonconfig.xml** file to the same directory.
 
 ![Creating new VM_41](/assets/img/soc_project/part2/041.png)
 
 ![Creating new VM_42](/assets/img/soc_project/part2/042.png)
 
-![Creating new VM_43](/assets/img/soc_project/part2/043.png)
-
 ![Creating new VM_44](/assets/img/soc_project/part2/044.png)
 
-Next, open a PowerShell terminal with administrative privileges and run the following command to install **Sysmon**.
+Next, open a PowerShell terminal with **administrative privileges**, go to the sysmon directory and run the following command to install **Sysmon**.
 
-```ps
+```powershell
+# Changing directory
+cd "/path/to/sysmon"
+
+# Installing sysmon
 sysmon64.exe -i sysmonconfig.xml
 ```
 
+![Creating new VM_43](/assets/img/soc_project/part2/043.png)
+
 ![Creating new VM_45](/assets/img/soc_project/part2/045.png)
 
-Agree to the license terms and after a few seconds, the **Sysmon service** will be running.
+Agree with the license terms and after a few seconds, the **Sysmon service** will be running.
 
 ![Creating new VM_46](/assets/img/soc_project/part2/046.png)
 
