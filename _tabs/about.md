@@ -4,6 +4,8 @@ icon: fas fa-info-circle
 order: 1
 ---
 
+![Nessie_found](/assets/img/photography/scotland/scotland_024.jpg)
+
 * 🎓 Currently working towards my CRTO from Zero-Point Security
 * 💻 Interested in learning about Networking, Cyber Security and Red Team Operations
 * 🎥 Huge The Office and Lord of The Rings (extended version) fan

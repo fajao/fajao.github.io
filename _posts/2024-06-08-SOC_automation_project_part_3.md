@@ -177,8 +177,7 @@ During installation, whenever you're presented with the image below, press `Ente
 
 ## Next Steps
 
-Now that we have deployed our Wazuh and TheHive servers, the next step is to configure them to work together. This integration will enhance our incident management and response capabilities.
-
+With our Wazuh and TheHive servers successfully deployed, the next step involves configuring TheHive components and setting up our Wazuh agent, by adding our Windows 10 VM to Wazuh Manager. 
 
 [1]: https://whatismyipaddress.com/
 [2]: https://documentation.wazuh.com/current/installation-guide/wazuh-server/installation-assistant.html
