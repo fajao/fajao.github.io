@@ -280,4 +280,4 @@ This project has been a rewarding journey, demonstrating the power and flexibili
 
 [1]: https://shuffler.io/
 [2]: https://docs.virustotal.com/reference/file-info
-[3]: http://sqrx.io/mydfir_yt
+[3]: https://sqrx.com/?utm_source=youtube&utm_medium=influencer&utm_campaign=canada&utm_term=mydfir&utm_content=soc&utm_id=launch_1223&sq_id=mydfir_yt
