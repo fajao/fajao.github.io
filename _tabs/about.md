@@ -19,7 +19,7 @@ The following is just some of the wide range of topics I hope to discuss and cov
 - [x] SOC Automation Project (HomeLab)
 - [ ] PNPT - journey, tips, etc.
 - [x] OSCP - journey, tips, etc.
-- [ ] HTB boxes walkthrough
+- [x] HTB boxes walkthrough
 - [ ] Aerial photography (some photos I took a couple years ago)
 
 ## Socials
