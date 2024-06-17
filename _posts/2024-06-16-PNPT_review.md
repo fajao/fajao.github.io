@@ -1,17 +1,17 @@
 ---
 title: PNPT Review & Tips (2024)
-date: 2024-06-18 12:00:00 -500
+date: 2024-06-17 07:00:00 -500
 categories: [certifications,pnpt]
 tags: [pnpt,exam,tips,certifications]
 image: /assets/img/certifications/0_blHJaVCIcj4_PP0W.png
 ---
 
 <style>
-.float-left {
-    float: left;
-    margin-right: 15px; /* Adjust the margin as needed */
+.float-right {
+    float: right;
+    margin-left: 15px; /* Adjust the margin as needed */
     margin-bottom: 15px; /* Adjust the margin as needed */
-    max-width: 40%; /* Adjust the width as needed */
+    max-width: 50%; /* Adjust the width as needed */
 }
 .clearfix::after {
     content: "";
@@ -22,71 +22,86 @@ image: /assets/img/certifications/0_blHJaVCIcj4_PP0W.png
 
 # PNPT Review and Tips (2024)
 
-In this article, I will discuss my personal PNPT journey and some tips you can use to help yourself pass the exam as well. After successfully tackling the OSCP, I went back to complete PNPT's course material and    couple of months ago, I attempted to pass the Offsec Certified Professional (OSCP). In this article, I will discuss my personal PNPT journey and some tips you can use to help yourself pass the exam as well.
+In this article, I will discuss my personal PNPT journey and some tips you can use to help yourself pass the exam.
 
-![PNPT certificate](/assets/img/certifications/pnpt_cert.png)
+## PNPT 
 
-## PNPT Exam
+The [Practical Network Penetration Tester exam][1]{:target="_blank"} is a 5-day long practical exam with an additional 2-days to turn in a professionally written penetration test report. To obtain the PNPT certification, you need to:
 
-The Offensive Security Certified Professional (OSCP) certification is one of the most respected and sought-after credentials in the cybersecurity field. The OSCP exam gives you 23 hours and 45 minutes to hack into 6 target machines (3 stand-alone machines and 1 Active Directory environment that contains 2 hosts and 1 domain controller). Each machine compromised grants you an amount of points, and you need at least 70 points to pass.
+* Perform Open-Source Intelligence (OSINT) to gather intel on how to properly attack the network
+* Leverage their Active Directory exploitation skillsets to perform A/V and egress bypassing, lateral and vertical network movements, and ultimately compromise the exam Domain Controller
+* Provide a detailed, professionally written report
+* Perform a live 15-minute report debrief in front of our assessors, comprised of all senior penetration testers
 
-<div class="clearfix">
-    <img src="/assets/img/certifications/oscp_cert.png" alt="Sample Image" class="float-left">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-</div>
+For $499 you will be given access to their training material and an exam voucher with a free retake. The exam voucher and training material access **DOES NOT EXPIRE**!
 
-## Background
-
-Before diving into the PEN-200 equipment, I finished the [PEH course from TCM Security][1]{:target="_blank"} and had some exposure to CTFs from TryHackme and HackTheBox machines. Other than that, I had previously taken the [Mike Meyers][4]{:target="_blank"} Network+ and Security+ courses.
+> While TCM Security raised their prices in April 2024, they remain a fantastic resource compared to competitors, offering amazing content and practical experience.
+{: .prompt-info }
 
 ## Preparation
 
-After purchasing the Learn One bundle (which had a 20% discount off during November), I tackled the course materials to see if I would be ready for the exam in early 2024. I was actually planning on going to the PNPT first but I just couldn’t wait, so I shifted my focus towards the OSCP.
+<div class="clearfix">
+    <img src="/assets/img/certifications/046.png" alt="TCM_Courses" class="float-right">
+    The training material is composed of five TCM courses: Practical Ethical Hacking (PEH), Windows and Linux Privilege Escalation for beginners, External Pentest Playbook and Open-Source Intelligence (OSINT) Fundamentals.  
 
-Even though I didn’t watch the videos, the course material was decent and well put. There were some modules that I think they could explore more, like the SQLi one, which made me search for alternative resources like HTB academy. The practical labs, especially the capstone exercises, were challenging and good practice to make sure we understood the module content.
+    I started with the Practical Ethical Hacking (PEH) material in September 2023 and completed the other courses after finishing the OSCP. Overall, I appreciate their video format because not only it makes you watch it a bunch of times just to take notes, but it is also very easy to follow.
+</div> 
 
-The challenge labs are composed of 6 environments: 3 networks (Medtech, Relia and Skylark) and 3 mock exams (OSCP A/B and C), which have the same structure as the exam. After completing Medtech and Relia (never started Skylark because it’s beyond the scope of the OSCP exam), with a lot of hints and discord help, I approached the mock exams like an actual exam, where I would time each attempt and write a report after completing it. Of all the 3 challenges, I was only able to “pass” OSCP B, which made me ask if I would be able to succeed in the actual exam.
+## Exam Structure
 
-After getting my bonus points, I went for the [TJ Null’s list][2]{:target="_blank"} and completed around 44 machines from PG Practice. Overall it was a good practice, even though some of the machines were broken.
+> PNPT is not a CTF type exam like OSCP and there are **NO FLAGS**!
+{: .prompt-warning }
 
-![OSCP bonus points](/assets/img/certifications/oscp_bonus.png)
+After [scheduling your exam][2]{:target="_blank"}, you'll receive an email with the OpenVPN file and the rules of engagement (RoE). Next, after carefully reading them, you're required to start performing OSINT against your target and extract useful information from public-facing assets. Once you've gathered all the info you need on the target, you'll have to identify an entry point to the external network. Once inside the perimeter, you have to work out how to gain access to the internal network and start pivoting through machines, with your goal being to compromise the DC. After compromising the domain admin, you will need to perform a persistence technique to ensure future access to the domain.
 
-## Exam Day
+### First Attempt
 
-I scheduled my exam for 6 p.m. and had everything ready (snapshots, cheat sheets, water, food, identification, everything). The identification process started at 5:45 and for some reason I couldn’t share my second screen, even though I tested it the day before.  
+I was able to fully compromise the domain in the first 72 hours, which left me with time to take all the screenshots and prepare my report before ending my access to the environment. After completing and submitting my report (I used [TCM's template][3]{:target="_blank"}), I started to prepare a powerpoint presentation with all my findings for the debrief. 
 
-> Schedule your exam in advance, don't be like me!
+![the_office_ppw_gif](/assets/img/certifications/ppw_gif.gif)
+
+This part was actually hard because you only have 15 minutes to present your results and there are a lot of information to talk about.
+
+> You don't need a Powerpoint presentation. The majority of people just review their report!
 {: .prompt-info }  
 
-After dismounting my second monitor, I started the exam and my first step was to enumerate all the machines, starting with the AD and going to the stand-alones after.
+Unfortunately, after receiving my exam update, I was informed that I failed the report stage because of a lack of information/screenshots and looking back, I understand why. I just enumerated the steps I took to compromise the domain admin and only presented one or two screenshots to prove those finding. 
 
-In the first hour, I already had a foothold on the AD set but couldn’t escalate privileges. After 6 hours of reviewing all screenshots and enumerating the AD set again, I went for the stand-alones and was able to get a low privilege user, but again, I was unable to escalate to root. After some time, I decided that I needed some rest, so I went to ~~try to~~ sleep for the next 4 hours.  
+> Don't just list steps, explain your thought process and include screenshots. While the template is a good starting point, tailor it to your findings.
+{: .prompt-tip } 
 
-![TheOffice MS kill myself](/assets/gifs/I_m_going_to_kill_myself_The_Office.gif)
+Not gonna lie, I was very mad because not only I had enough time to prepare a proper report, but also had all screenshots needed in my notes, just didn't included them in the report.  
 
-After some terrible sleep, I started enumerating the first AD machine again and was able to finally escalate privileges and pivot to the other host. From there, it took me less than an hour to fully compromise the AD set.
+![the_office_crying_gif](/assets/gifs/crying.gif)
 
-With 60 pts (AD + stand-alone low user + bónus points), I took another break and after that I went for another stand-alone. There, I was able to compromise a low privilege user after 2 hours and got root access in the next 15 minutes.
+### Second Attempt
 
-Even though I already had enough points to pass, I tried to root the final standalone but without success (even though I’m pretty sure I was on the right track but unfortunately couldn’t breach it).
+After a couple of days, I started my second attempt, went through all the steps of the engagement and took additional screenshots to the ones I already had. Prepared my report with all the screenshots needed and successfully passed to the debrief stage.
+
+![the_office_crying_gif](/assets/gifs/the-office-dwight-schrute.gif)
+
+With my ID, presentation, webcam and mic ready, I joined the call with the TCM staff. It started with some quick identity verification and then they just listened to my presentation of every finding and recomendations. At the end of the call, they let me know I had passed and that my certificate would be issued shortly.
+
+![PNPT certificate](/assets/img/certifications/pnpt_cert.png)
 
 ## Exam Tips
 
-* **Take breaks**, do not underestimate the power of a short 10 minute break.
-* **Prepare your methodology**. For the AD set, the mock exams are a good practice and for the stand-alones go with the PGP boxes. I developed my cheat sheet from [0xBEN structure][3]{:target="_blank"}.
-* **Treat the mock exams like a real exam attempt**. With it, not only will you train your time management but you’ll also have the report format ready for when you go for the real thing.
+* **Prepare your methodology**. You can use [0xBEN structure][4]{:target="_blank"} as reference.
 * **Take snapshots of your kali machine**. The last thing you want is having to install a fresh Kali VM in the middle of the exam, without the tools you’re used to.
 * Use and abuse **ligolo and netexec**. 
+* **Take breaks**, you have 5 days to fully compromise the AD set. Take your time and if you're stuck, just take a break. Do not underestimate the power of a short 10 minute break.
+* **Document everything**: Take detailed notes and screenshots throughout the exam.
+* Enumerate, enumerate, enumerate, enumerate and **ENUMERATE**!
 
-## Conclusion
+## Final Toughts
 
-It was a long road and one I thoroughly enjoyed. I’m very proud of my exam results and that I passed on the first attempt. 
+The PNPT exam was a rewarding experience. The structure, from the RoE to the client debrief, realistically simulates a real-world penetration test (~~at least that's what I think it would look like xD~~). While I'm currently pursuing the [CRTO][5]{:target="_blank"} certification, TCM's new web pentesting certification ([PWPT][6]{:target="_blank"}) has piqued my interest, and I might explore it next.
 
-I am now determined to complete the CRTO from Zero-Point Security, let’s see how it goes!
+![TheOffice MS and Dwight dancing](/assets/gifs/michael-scott-twirl.gif)
 
-![TheOffice MS and Dwight dancing](/assets/gifs/the-office-michael-scott.gif)
-
-[1]: https://academy.tcm-sec.com/p/practical-ethical-hacking-the-complete-course
-[2]: https://docs.google.com/spreadsheets/u/1/d/1dwSMIAPIam0PuRBkCiDI88pU3yzrqqHkDtBngUHNCw8/htmlview#
-[3]: https://benheater.com/my-ctf-methodology/
-[4]: https://www.udemy.com/user/mike-meyers/
+[1]: https://certifications.tcm-sec.com/pnpt/
+[2]: https://exams.tcmsecurity.com/login
+[3]: https://github.com/hmaverickadams/TCM-Security-Sample-Pentest-Report
+[4]: https://benheater.com/my-ctf-methodology/
+[5]: https://training.zeropointsecurity.co.uk/courses/red-team-ops
+[6]: https://certifications.tcm-sec.com/pwpt/
