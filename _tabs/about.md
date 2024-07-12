@@ -24,6 +24,7 @@ The following is just some of the wide range of topics I hope to discuss and cov
 - [x] Aerial photography (some photos I took a couple years ago)
 - [x] DDoS Project - Detection and Response
 - [ ] Subnetting Home Network
+- [x] Malicious URL Detection using ML
 
 ## Socials
 
