@@ -60,19 +60,24 @@ image: "/assets/img/phishing/icon.jpg"
     transform: scale(1.05); /* Slightly enlarge image on hover */
 }
 
+.gallery-item3:hover .gallery-image {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+}
+
+
 </style>
 
 # Malicious URL Detection using Machine Learning
 
 ## Summary
 
-In this article, we will discuss a case study on detecting malicious URLs using lexical and external features with a machine learning model.
+In this article, I'll share how I tackled the challenge of detecting malicious URLs using a machine learning model that incorporates both lexical and external features.
 
-Before embarking on this project, I had no knowledge or experience with machine learning and its various algorithms, nor with some of the necessary Python libraries. I spent the last few days learning from Kaggle and other online resources to bridge this gap.
-
-But before we delve into the project details, let's understand what a URL is and what makes it malicious.
+Before embarking on this project, I had no prior knowledge or experience with machine learning and its various algorithms, nor with some of the necessary Python libraries. I spent the last few days learning from Kaggle and other online resources to fill in these gap.
 
 ### What is a URL?
+
+Before diving into the project details, let’s take a moment to understand what a URL is. 
 
 According to [TechTarget][1]{:target="_blank"}, a URL (Uniform Resource Locator) is a unique identifier used to locate a resource on the Internet. It is also referred to as a web address. URLs consist of multiple parts - including a protocol and domain name - that tell a web browser how and where to retrieve a resource.
 
@@ -98,7 +103,7 @@ A malicious URL is a link created with the intent to promote scams, attacks, and
 
 In this project we will detect malicious URLs based on some of its features and with the help of machine learning.
 
-Every line of code was developed on my local jupyter notebook, you can install jupyter by following the instructions [here][2]{:target="_blank"}.
+Every line of code was developed on my local jupyter notebook. You can install Jupyter by following the instructions [here][2]{:target="_blank"}.
 
 ![Diagram](/assets/img/phishing/phishing_diagram.svg)
 
@@ -106,7 +111,7 @@ Every line of code was developed on my local jupyter notebook, you can install j
 
 ### Dataset Description
 
-To create our prediction script, we first need a dataset to train our model. This dataset, `final_raw_data.csv` consists, of 1298000 URLs and it has two columns: the URL itself and a label indicating whether it is **benign** (**0**) or **malicious** (**1**).
+To create our prediction script, we first need a dataset to train our model. This dataset, `final_raw_data.csv`, consists of **1298000** URLs and it has two columns: the URL itself and a label indicating whether it is **benign** ("**0**") or **malicious** ("**1**").
 
 **Layout**:
 * **49524** benign URLs (source: Alexa Top Websites)
@@ -135,18 +140,18 @@ dataset = dataset.drop_duplicates()
 dataset.dropna() 
 ```
 
-This process was already applied to our `final_raw_data.csv` file, so we still retaining 1,298,000 URLs.
+This process was already applied to our `final_raw_data.csv` file, so we still retain the 1298000 URLs.
 
 ### Whois Verification - Stage 2 & 3
 
-After preprocessing our data, we checked which URLs are reachable via whois. This is one of the most important steps because of the features we were able to extract from it: domain registration and expiration date. 
+After preprocessing our data, we checked which URLs are **reachable via whois**. This is one of the most important steps because of the features we were able to extract from it: **domain registration** and **expiration date**. 
 
 Malicious URLs typically have shorter registration and expiration periods. Therefore, if a domain is recent with an expiration date within two years, the probability of it being malicious is high.
 
 > Although many phishing/malicious campaigns use newly creates domains, an old domain is not necessarily safe. An attacker can take ownership of an expired domain and use it for malicious activities!
 {: .prompt-warning }
 
-To expedite the project, we divided the data into two datasets: malicious and benign, and performed Whois verification on **10,000** URLs from each.
+To expedite the project, we divided the data into two datasets: malicious and benign, and performed Whois verification on **10000** URLs from each.
 
 ```python
 # Import libraries
@@ -183,21 +188,21 @@ for url in phish_sample:
         phish_urls.append(url)
 ```
 
-In the end, We verified **8412** malicious URLs and **9949** benign URLs. We then merged the results into a single `.csv` file, ensuring an equal number of benign and malicious URLs — **8400** each.
+In the end, We verified **8412** malicious and **9949** benign URLs. We then merged the results into a single `.csv` file, ensuring an equal number of benign and malicious URLs — **8400** each.
 
 ### Features Extraction - Stage 4
 
-Now that we have our "final" dataset ready, we can start to extract features to train our model. In this project, we extracted 16 lexical features and 2 external/whois features:
+Now that we have our "final" dataset ready, we can start to extract features to train our model. In this project, we extracted **16 lexical** features and **2 external/whois** features:
 
-**External/Whois features**:
+##### External/Whois features:
 
 * **Registration Date**: Older URLs are more likely to be benign.
 * **Expiration Date**: Most threat actors do not keep their domains active for long periods.
 
-**Lexical Features**:
+##### Lexical Features:
 
-* Having **IP address in the URL**: Attackers might use an IP address (IPv4 or IPv6) to hide the website's identity.
-* Having **port in the URL**: Non-standard ports may indicate attempts to avoid detection or host malicious content.
+* Having the **IP address in the URL**: Attackers might use an IP address (IPv4 or IPv6) to hide the website's identity.
+* Having the **port in the URL**: Non-standard ports may indicate attempts to avoid detection or host malicious content.
 * **Number of "."**: Phishing/malware websites might use more than two sub-domains in the URL. Each domain is separated by dot (.). If any URL contains more than three dots, then it increases the probability of being a malicious site.
 * **Number of "@"**: The “@” symbol can obfuscate the true URL.
 * **Number of "-"**: Dashes are often used to mimic legitimate URLs.
@@ -221,7 +226,7 @@ Before diving into our ML model, let's take a look at each feature and its repre
 
 **Exploratory Data Analysis (EDA)** is performed to understand and gain insights from the data before conducting further analysis or modeling. It helps in identifying patterns, trends, and relationships within the dataset. 
 
-To perform this analysis, we used **matplotlib** and **seaborn** graphs capabilities:
+To perform this analysis, we used **matplotlib** and **seaborn** graphical capabilities:
 
 <div class="image-gallery">
   <figure class="gallery-item3">
@@ -280,7 +285,7 @@ To perform this analysis, we used **matplotlib** and **seaborn** graphs capabili
   </figure>
 </div>
 
-After reviewing the graphs, the features `short_URL` and `Port_in_URL` could negatively impact our model negatively due to their distribution across benign and malicious URLs. The `number_of_protocols` could also be a problem, because the majority of benign URLs don't start with the protocol (www.example.com).
+After reviewing the graphs, the features `short_URL` and `Port_in_URL` could impact our model negatively due to their distribution across benign and malicious URLs. The `number_of_protocols` could also be a problem, because the majority of benign URLs don't start with the protocol (www.example.com).
 
 ![Graphics 1](/assets/img/phishing/020.png)
 
@@ -288,9 +293,9 @@ Here we can see what we already said, the majority of benign/legit URLs are olde
 
 ### Machine Learning - Stage 6
 
-Now that we have our data ready and we now each columns to drop, it is time to start training our model.
+Now that we have our data ready and we know each columns to drop, it is time to start training our model.
 
-First, we created our X and y variables. X contained the features to train the model, and y contained the labels of each URL.
+First, we created our X and y variables. X contained the features to train the model, and y contained the label of each URL.
 
 ```python
 # Import libraries
@@ -315,11 +320,11 @@ from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 ```
 
-Now, we are ready to train/test our data with different machine learning algorithms.
+Now, we are ready to train/test our data with different Machine Learning algorithms.
 
 #### Model Building
 
-We trained our Machine Learning model with the following Machine Learning Classification algorithms: Decision Trees, Support Vector Machine (SVM), Kernel SVM and Random Forest (all code [here][6]{:target="_blank"}).
+We trained our Machine Learning model with the following algorithms: **Decision Trees**, **Support Vector Machine (SVM)**, **Kernel SVM** and **Random Forest** (all code [here][6]{:target="_blank"}).
 
 * **Decision Tree**: A decision tree is a supervised learning algorithm that is used for classification and regression modeling. Regression is a method used for predictive modeling, so these trees are used to either classify data or predict what will come next. 
 
@@ -571,16 +576,16 @@ Let's check the importance of each feature for our model's prediction process:
 
 ![graph](/assets/img/phishing/021.png)
 
-As we can see, `HTTP_check`, `url_length`, `number_of_www` and the whois features have a significant impact in our model's decision. Although, these are important features for verifying the credibility of a URL, they might not be enough.
+As we can see, `HTTP_check`, `url_length`, `number_of_www` and the whois features have a significant impact in our model's decision. Although these are important features for verifying the credibility of a URL, they might not be enough.
 
-For example, if we run this blog URL against our prediction model, it is flagged as "**Suspicious**". This might be due to recent registration, low expiration date, no "www", etc.
+For example, if we run this blog URL against our prediction model, it is flagged as "**Suspicious**". This might be due to its recent registration, low expiration date, no "www", etc.
 
 ![image__033](/assets/img/phishing/033.png)
 
 A couple of points to consider to prevent these false positives in the future:
 
 * **Small dataset**: 16800 urls is a small dataset, which could lead to an underfit model;
-* **Not enough features extracted**: 18 features is a small number. We could extract content (Href, Link, Media, Form, CSS, Favicon) and nslookup features next time.
+* **Not enough features extracted**: We could extract content (Href, Link, Media, Form, CSS, Favicon) and nslookup features next time.
 
 
 ## Final Thoughts
