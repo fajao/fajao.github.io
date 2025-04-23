@@ -93,7 +93,7 @@ With my ID, presentation, webcam and mic ready, I joined the call with the TCM s
 * **Document everything**: Take detailed notes and screenshots throughout the exam.
 * Enumerate, enumerate, enumerate, enumerate and **ENUMERATE**!
 
-## Final Toughts
+## Final Thoughts
 
 The PNPT exam was a rewarding experience. The structure, from the RoE to the client debrief, realistically simulates a real-world penetration test (~~at least that's what I think it would look like xD~~). While I'm currently pursuing the [CRTO][5]{:target="_blank"} certification, TCM's new web pentesting certification ([PWPT][6]{:target="_blank"}) has piqued my interest, and I might explore it next.
 
